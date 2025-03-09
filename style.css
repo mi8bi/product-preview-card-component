@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("./fonts/Fraunces_72pt-Regular.ttf") format("truetype");
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    border-radius: 10px;
+    overflow: hidden; /* 子要素がカードの角をはみ出さないようにする */
+}
+
+.content {
+    margin: 20px;
+}
+
+.subtitle {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: x-small;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+}
+
+.title {
+    margin-top: 10px;
+    font-family: "Fraunces";
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.desc {
+    margin-top: 10px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: x-small;
+    line-height: 150%;
+}
+
+.money {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.discount {
+    font-family: "Fraunces";
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(49, 187, 127);
+}
+
+.origin {
+    font-family: "Fraunces";
+    font-size: x-small;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.cartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    /* アイコンとテキストの間隔 */
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: small;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    word-spacing: 0.2em;
+    background-color: rgb(43, 148, 102);
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 16px;
+    /* アイコンサイズ調整 */
+    height: 16px;
+}
